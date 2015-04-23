@@ -1,0 +1,1 @@
+<div class="laboratory_event"><?php $laboratory_event = get_post_meta( $post->ID, 'laboratory_event', true ); if($laboratory_event): ?> <p align="justify"> 		<?php echo apply_filters('the_content', $laboratory_event); ?> 	 </p>                           <?php endif; ?></div>

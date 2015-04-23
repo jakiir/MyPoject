@@ -1,0 +1,19 @@
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 975px;
+	height:416px;
+}
+.jp_only .scrollable {
+	height:320px;
+}
+
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+
+.items div {
+/*	float:left;*/
+	position: absolute;
+}

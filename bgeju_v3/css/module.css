@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/*===================================================
+
+  Content Footer
+
+====================================================*/
+
+
+
+/* Structure
+----------------------------------------------------*/
+
+div#contentFooter {
+width:975px;
+overflow: hidden;
+}
+
+div.contentFooterInner{
+width:1005px;
+}
+
+div#contentFooter section{
+width:47%;
+float: left;
+margin-right: 30px;
+margin-bottom: 60px;
+}
+	div#contentFooter section h2.titleStyle_B2{
+	padding-top:13px !important;
+	margin-bottom: 25px !important;
+	}
+	div#contentFooter section footer{
+	margin-top: 1.5em;
+	}
+
+
+div#contentFooter .thumbnail img{
+-webkit-transition: opacity 0.1s ease-out;
+}
+
+div#contentFooter h2 a:hover img{
+opacity: 0.7;
+-moz-opacity: 0.7;
+filter:alpha(opacity=70);
+}
+
+div#contentFooter .thumbnail a:hover img{
+opacity: 0.8;
+-moz-opacity: 0.8;
+filter:alpha(opacity=80);
+}
+
+
+
+/* Shared
+----------------------------------------------------*/
+
+section.footerModule_LinkList{
+
+}
+	/*
+		section.featuredNews ul:before{
+		  background: none;
+		  border: 2px solid red;
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  top: 4px;
+		  left: 4px;
+		  right: -8px;
+		  bottom: -8px;
+		  border-radius: 4px;
+		  pointer-events: none;
+		}
+		section.featuredNews ul{
+			padding-top: 1px;			
+			background: url(../images/icon/partition_03.png) left top repeat-x;
+			margin-bottom:20px;
+			border:2px solid green;
+			border-radius:4px;	
+			padding: 20px 10px 50px 20px;
+			position: relative;		
+			
+		}
+		*/
+		
+		section.featuredNews ul{
+			padding-top: 1px;
+			/*background: url(../images/icon/partition_03.png) left top repeat-x;*/
+			margin-bottom:20px;				
+			padding: 20px 10px 50px 20px;
+			position: relative;		
+			
+		}
+	
+		section.featuredNews ul li{
+			margin: 0;
+			padding: 0;
+		}
+		
+		section.featuredNews ul li.noLink{
+			padding:13px 0;
+			background: url(../images/icon/partition_03.png) left bottom repeat-x;
+		}
+		
+		section.featuredNews ul li a{
+			display: block;
+			padding:13px 0;
+			text-decoration: none;
+			background: url(../images/icon/partition_03.png) left bottom repeat-x;
+		}
+		
+		section.featuredNews ul li a:hover span.title,
+		section.featuredNews ul li a:hover span.talkTitle{
+			text-decoration: underline;
+		}
+		
+		section.featuredNews ul li span.inner{
+			display: block;
+			padding-left: 15px;
+			background: url(../images/icon/arw_05.png) left center no-repeat;
+		}
+		section.featuredNews ul li.noLink span.inner{
+			padding: 0;
+			background: none;
+		}
+		
+		section.featuredNews ul li span.date{
+			display: block;
+			font-size:85%;
+			color: #666;
+			margin-bottom: 5px;
+		}
+		
+		section.featuredNews ul li span.date em{
+			color: #1200ff;
+                        font-weight: 600;
+		}
+
+		
+		section.featuredNews ul li span.title{
+			margin-top: 5px;
+			font-size:100%;
+			line-height: 1.2;
+		}
+		
+		section.featuredNews ul li.blankLink span.title{
+			padding-right: 18px;
+			background: url(../images/icon/blt_open_win.png) right center no-repeat;
+		}
+	
+
+	section.footerModule_LinkList ul{
+	padding-top: 1px;
+	background: url(../images/icon/partition_03.png) left top repeat-x;
+	}
+	
+	section.footerModule_LinkList ul li{
+	margin: 0;
+	padding: 0;
+	}
+		
+		section.footerModule_LinkList ul li.noLink{
+		padding:13px 0;
+		background: url(../images/icon/partition_03.png) left bottom repeat-x;
+		}
+		
+		section.footerModule_LinkList ul li a{
+		display: block;
+		padding:13px 0;
+		text-decoration: none;
+		background: url(../images/icon/partition_03.png) left bottom repeat-x;
+		}
+		
+			section.footerModule_LinkList ul li a:hover span.title,
+			section.footerModule_LinkList ul li a:hover span.talkTitle{
+			text-decoration: underline;
+			}
+		
+		section.footerModule_LinkList ul li span.inner{
+		display: block;
+		padding-left: 15px;
+		background: url(../images/icon/arw_05.png) left center no-repeat;
+		}
+			section.footerModule_LinkList ul li.noLink span.inner{
+			padding: 0;
+			background: none;
+			}
+		
+		section.footerModule_LinkList ul li span.date{
+		display: block;
+		font-size:85%;
+		color: #666;
+		margin-bottom: 5px;
+		}
+		
+		section.footerModule_LinkList ul li span.date em{
+		color: inherit;
+		background: #F0F0F0;
+		}
+
+		
+		section.footerModule_LinkList ul li span.title{
+		margin-top: 5px;
+		font-size:100%;
+		line-height: 1.2;
+		}
+		
+		section.footerModule_LinkList ul li.blankLink span.title{
+		padding-right: 18px;
+		background: url(../images/icon/blt_open_win.png) right center no-repeat;
+		}
+		
+		section.footerModule_LinkList footer a{
+		float:left;
+		margin-right: 1em;
+		font-size:100%;
+		}
+		section.footerModule_LinkList footer a.linkArwNormal{
+		margin-top: 1px;
+		}
+
+
+/* News
+----------------------------------------------------*/
+
+section#footerModule_News{}
+
+
+
+
+
+/* Media
+----------------------------------------------------*/
+
+section#footerModule_Media{}
+
+
+
+
+
+/* Press Releases
+----------------------------------------------------*/
+
+section#footerModule_Press{}
+
+
+
+
+
+/* Events
+----------------------------------------------------*/
+
+section#footerModule_Events{}
+
+	section#footerModule_Events ul li span.title{
+	display: block;
+	margin-bottom: 3px;
+	}
+	
+	section#footerModule_Events ul li span.title strong{
+	font-weight: bold;
+	}
+	
+	section#footerModule_Events ul li span.talkTitle{
+	font-size:92%;
+	line-height: 1.2;
+	}
+
+
+
+
+/* About
+----------------------------------------------------*/
+
+section#footerModule_About{}
+	section#footerModule_About .thumbnail{
+	font-size:0px;
+	margin-bottom:15px;
+	}
+	section#footerModule_About p{
+	font-size:100%;
+	line-height: 1.6;
+	}
+
+
+
+/* Careers
+----------------------------------------------------*/
+
+section#footerModule_Careers{}
+	section#footerModule_Careers .thumbnail{
+	font-size:0px;
+	margin-bottom:15px;
+	}
+	section#footerModule_Careers p{
+	font-size:100%;
+	line-height: 1.6;
+	}
+
+
+
+/* Faculty
+----------------------------------------------------*/
+
+section#footerModule_Faculty{}
+	section#footerModule_Faculty .thumbnail{
+	width:305px;
+	height:200px;
+	overflow: hidden;
+	margin-bottom:15px;
+	font-size:0px;
+	}
+	section#footerModule_Faculty .thumbnail a,
+	section#footerModule_Faculty .thumbnail span{
+	display: block;
+	font-size:0px;
+	line-height: 1;
+	}
+	section#footerModule_Faculty .thumbnail a{
+	width:307px;
+	height:200px;
+	}
+	section#footerModule_Faculty .thumbnail span{
+	margin: 0 1px 1px 0;
+	width:152px;
+	height: 99px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	}
+	section#footerModule_Faculty .thumbnail span img{
+	position: absolute;
+	left:-1px;
+	top:-3px;
+	}
+	section#footerModule_Faculty p{
+	font-size:100%;
+	line-height: 1.6;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

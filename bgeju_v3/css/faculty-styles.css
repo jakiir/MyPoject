@@ -1,0 +1,876 @@
+﻿@charset "utf-8";
+
+/* Font
+----------------------------------------------------*/
+
+.txt p{
+
+}
+
+
+
+
+
+/* Structure
+----------------------------------------------------*/
+
+
+
+/* Side Navi
+----------------------------------------------------*/
+
+#facultyExplorer div#sideNav nav,
+#facultyDetail div#sideNav nav,
+#facultyPublications div#sideNav nav{
+padding-top: 1px;
+background: url(../images/icon/partition_01.png) left top repeat-x;
+}
+
+	#facultyTop div#sideNav nav ul li#sideNav01{	
+	padding-top: 1px;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+	}	
+	
+	#facultyExplorer div#sideNav nav ul li#sideNav00,
+	#facultyDetail div#sideNav nav ul li#sideNav00,
+	#facultyPublications div#sideNav nav ul li#sideNav00{
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icon/partition_01.png) left bottom repeat-x;
+	}
+	
+	div#sideNav nav ul li ul li{
+	padding-top: 0;
+	background: none;
+	}
+
+
+
+
+
+/* Contents - Faculty Top
+----------------------------------------------------*/
+
+#facultyTop div#mainContents section{
+margin-bottom: 70px;
+}
+	#facultyTop div#mainContents section h3{
+	margin-top: 40px;
+	}
+	#facultyTop div#mainContents section ul{
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 25px;
+	}
+	#facultyTop div#mainContents section ul li{
+		width:342px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 25px;
+	}
+		#facultyTop div#mainContents section ul li a{
+		line-height: 1.3;
+		display:inline;
+		zoom:1;
+		display: inline-block;
+		padding-left: 15px;
+		text-decoration: none;
+		font-size: 107%;
+		background: url(../images/icon/arw_01.png) left 5px no-repeat;
+		}
+		#facultyTop div#mainContents section ul li a:hover{
+		text-decoration: underline;
+		}
+		#facultyTop div#mainContents section ul li a strong{
+		   font-weight: bold;
+		   padding-bottom: 15px;
+                   display: block;
+		}
+		#facultyTop div#mainContents section ul li a span{
+		font-size: 92%;
+		color:#666666;
+		}
+
+
+
+/* Contents - Faculty Explorer
+----------------------------------------------------*/
+
+#facultyExplorer div#mainContents{
+width:739px;
+}
+
+#facultyExplorer div#mainContents #explorerContainer{
+position: relative;
+background: url(../images/faculty/explorer_bg_middle.png) left top repeat-y;
+}
+	#facultyExplorer div#mainContents #explorerContainerInner{
+	background: url(../images/faculty/explorer_bg_top.png) left top no-repeat;
+	}
+	#facultyExplorer div#mainContents #explorerContainerInner2{
+	background: url(../images/faculty/explorer_bg_bottom.png) left bottom no-repeat;
+	padding: 16px 15px 16px 16px;
+	}
+	
+	#facultyExplorer div#mainContents #explorerContainerInner2 li{
+/*		background-color: #000000;*/
+	}
+	
+	#explorerContainer ul li{
+	float:left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	position: relative;
+	}
+		#explorerContainer ul li.right{
+		float:right;
+		}
+		#explorerContainer ul li .txt{
+		position: absolute;
+		left:0px;
+		bottom: 0px;
+		margin: 0;
+		background: url(../images/faculty/explorer_txtbg.png) left top repeat;
+		z-index: 1;
+		}
+		#explorerContainer ul li .txt p{
+		vertical-align: middle;
+		margin: 0;
+		color:#FFF;
+		font-size:12px;
+		line-height: 1;
+		padding: 0 0 0 10px;
+		}
+			#explorerContainer ul li .txt p img{
+			vertical-align: middle;
+			height:28px;
+			}
+				#explorerContainer ul li.type0-2 .txt p img{
+				height:20px;
+				}
+		#explorerContainer ul li a{
+		display: block;		
+		}
+		
+		#explorerContainer ul li.type0-0 .txt{width:235px;}
+		#explorerContainer ul li.type0-1 .txt{width:176px;}
+		#explorerContainer ul li.type0-2 .txt{width:117px;}
+		#explorerContainer ul li.type1-0 .txt{width:176px;}
+		#explorerContainer ul li.type1-1 .txt{width:117px;}
+		
+		#explorerContainer ul li.type0-2 .txt p,
+		#explorerContainer ul li.type1-1 .txt p{font-size:10px;}
+		
+		#explorerContainer ul li.type0-2 .txt{
+		}
+		#explorerContainer ul li.type0-2 .txt p{
+		padding: 0 0 0 7px;
+		}
+
+		@-moz-document url-prefix() {
+			
+			#explorerContainer ul li .txt p{
+			display: table-cell;
+			vertical-align: middle;
+			margin: 0;
+			color:#FFF;
+			font-size:12px;
+			line-height: 1;
+			padding: 0 0 0 10px;
+			height:28px;
+			}
+				
+				#explorerContainer ul li.type0-2 .txt p{
+				height:20px;
+				}
+			
+			#explorerContainer ul li .txt p img{
+			display: none;
+			}
+		}
+	
+	
+	/* overlay box */
+	
+	.overlayBoxWrapper{
+	position: absolute;
+	z-index: 2;
+	}
+	
+	.overlayBoxWrapperInner{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	}
+	
+	.overlayBox{
+	top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight*2));
+	margin:0 auto;
+	/*width: 520px;*/
+	height:267px;
+	border:1px solid #CCC;
+	background: #FFF;
+	z-index: 10;
+	}
+		
+		.overlayBox .overlayBoxInner{
+		position: relative;
+		}
+		
+		.overlayBox a{
+		text-decoration: none;
+		}
+		
+		.overlayBox .imgWrapper{
+		font-size: 0px;
+		position: absolute;
+		top:15px;
+		}
+		
+		*:first-child+html .overlayBox .imgWrapper{
+		top:14px;
+		}
+		
+		.overlayBox .img{
+		position: static;
+		display:table-cell;
+		vertical-align:middle;
+		width: 235px;
+		height: auto;
+		text-align:center;
+		}
+			.overlayBox .img,
+			.overlayBox .img *{
+			font-size: 0px;
+			line-height: 1;
+			border: none;
+			}
+			.overlayBox .img span.a{
+			display: none;
+			}
+			*:first-child+html .overlayBox .img span{
+			display: inline;
+			zoom: 1;
+			vertical-align: middle;
+			}
+			
+			/* IE7 */
+				*:first-child+html .overlayBox .img span.a{
+				width:1px;
+				height:235px;
+				visibility: hidden;
+				}
+				*:first-child+html .overlayBox .img span.b{
+				margin-left: -1px;
+				}
+			
+			.overlayBox .img img{
+			-ms-interpolation-mode: bicubic;
+			}
+		
+		.overlayBox .txtWrap{
+		width:225px;
+		margin: 0;
+		padding-top: 15px;
+		text-align: left;
+		}
+		.overlayBox .txtWrap .txtOverlay{
+			width:200px;
+			background:#fff;
+			color:#000;
+			font-size:100%
+		}
+				.overlayBox .txtWrap .txtOverlay p{
+				line-height:1.4;
+				}
+			.overlayBox .name{
+			font-size:15px;
+			margin-bottom: 10px;
+			padding-top:20px;
+			font-weight: bold;
+			}
+			.overlayBox .lab{
+			font-size:13px;
+			margin-bottom: 20px;
+			}
+
+
+		/* type1 */
+		.overlayBox.type1 .imgWrapper{
+		left:15px;
+		}
+		.overlayBox.type1 .txtWrap{
+		padding-right: 20px;
+		float:right;
+		}
+			
+		/* type2 */
+		.overlayBox.type2 .imgWrapper{
+		right:15px;
+		}
+		.overlayBox.type2 .txtWrap{
+		float:left;
+		padding-left:20px;
+		}
+
+
+
+/* Contents - Faculty Detail
+----------------------------------------------------*/
+
+#facultyDetail section header{
+margin-bottom: 30px;
+}
+	#facultyDetail section header h2{
+	border-top: 2px solid #333333;
+	margin-bottom: 10px;
+	padding:20px 0 0;
+	font-weight: normal;
+	}
+		#facultyDetail section header.jp h2{
+		padding-top: 30px;
+		}
+	#facultyDetail section header h2 span.name{
+	font-size:167%;
+	}
+		
+		#facultyDetail section header h2 ruby rt{
+		font-size:77%;
+		}
+	#facultyDetail section header h2 span.title{
+	font-size:167%;
+	font-weight: lighter;
+	}
+	#facultyDetail section header p{
+	width: 550px;
+	color:#666;
+	line-height: 1.4;
+	font-size: 107%;
+	font-style: italic;
+	}
+		#facultyDetail section header.jp p{
+		font-style: normal;
+		}
+
+#facultyDetail section section{
+	margin-bottom: 60px;
+}
+
+#facultyDetail section .intro{
+overflow: hidden;
+zoom: 1;
+}
+	#facultyDetail section .intro .left{
+	width:260px;
+	padding-top: 20px;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+	}
+	#facultyDetail section .intro .right{
+	width:437px;
+	}
+	#facultyDetail section .intro hgroup{
+	margin-bottom: 1.3em;
+	}
+		#facultyDetail section .intro hgroup h3{
+				margin-bottom: 0.5em;
+				font-size:122%;
+				font-weight:bold;
+			}
+			#facultyDetail section .intro hgroup h3 span{
+			font-weight: normal;
+			}
+		#facultyDetail section .intro hgroup h4{		
+			font-weight: normal;
+			line-height: 26px;
+			font-size: 16px;
+		}
+		
+	#facultyDetail section .intro div.txt p{
+	line-height:1.2;
+	font-size:107%;
+	}
+		#facultyDetail section .intro div.txt p.keywords{
+		margin-top: 1em;
+		border-right:1px solid #CCC;
+		border-left:1px solid #CCC;
+		background: url(../images/icon/detail_keywords_block.png) left top no-repeat;
+		}
+		#facultyDetail section .intro div.txt p.keywords span{
+		display: block;
+		padding: 5px 10px 7px;
+		line-height: 1.2;
+		background: url(../images/icon/detail_keywords_block.png) left bottom no-repeat;
+		line-height: 25px;
+		}
+		#facultyDetail section .intro div.txt p.outside{
+		font-size:92%;
+		color:#666;
+		}
+	#facultyDetail section .intro nav.anchor{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+		#facultyDetail section .intro nav.anchor ul li{
+		line-height: 1;
+		margin-bottom: 0.7em;
+		}
+		#facultyDetail section .intro nav.anchor ul li a{
+		font-size: 107%;
+		padding-left:20px;
+		background: url(../images/icon/arw_anchor_00.png) left center no-repeat;
+		}
+	
+	#facultyDetail section .intro aside{
+	padding: 20px;
+	background: #F0F0F0;
+	}
+		#facultyDetail section .intro aside ul li{
+		line-height: 1.3;
+		margin-bottom: 0.9em;
+		}
+		#facultyDetail section .intro aside ul li a{
+		display:inline;
+		zoom:1;
+		display: inline-block;
+		font-size:100%;
+		padding-left:22px;
+		background:url(../images/icon/arw_02.png) 5px 3px no-repeat;
+		}
+			#facultyDetail section .intro aside ul li.blank{
+			padding-left:22px;
+			background:url(../images/icon/arw_02.png) 5px 3px no-repeat;
+			}
+				#facultyDetail section .intro aside ul li.blank a{
+				display: inline;
+				padding: 0 16px 0 0;
+				background:url(../images/icon/blt_open_win.png) right center no-repeat;
+				}
+			#facultyDetail section .intro aside ul li.mail{
+			padding-left:15px;
+			margin-bottom: 0;
+			line-height: 1;
+			background: url(../images/icon/blt_mail.png) 3px center no-repeat;
+			}
+				#facultyDetail section .intro aside ul li.pdf a{
+				padding-top: 3px;
+				padding-bottom: 3px;
+				background: url(../images/icon/blt_pdf.png) left center no-repeat;
+				}
+			#facultyDetail section .intro aside ul li.mail span.mailAddressLine{
+			display: block;
+			padding: 0;
+			background: none;
+			font-size: 13px;
+			line-height: 20px;
+			}
+
+#facultyDetail section .researchArea{}
+
+#facultyDetail section .researchArea li{
+	list-style-type: circle;
+	line-height: 25px;
+}
+#facultyDetail section .researchArea h1{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+	#facultyDetail section .researchArea div.figures{
+	margin: 2em 0;
+	}
+		#facultyDetail section .researchArea h4{
+		font-size: 107%;
+		font-weight: bold;
+		}
+		#facultyDetail section .researchArea .txt strong{
+		font-weight: bold;
+		}
+		#facultyDetail section .researchArea .txt em{
+		font-style: italic;
+		}
+		#facultyDetail section .researchArea div.figures p.img{
+		margin-bottom: 0;
+		font-size: 0px;
+		}
+		#facultyDetail section .researchArea div.figures p.zoom{
+		border:1px solid #ccc;
+		padding: 2px;
+		}
+			#facultyDetail section .researchArea div.figures p.zoom img{
+			cursor: pointer;
+			}
+		#facultyDetail section .researchArea div.figures .img img{
+		-ms-interpolation-mode: bicubic;
+		}
+		#facultyDetail section .researchArea div.figures .img.left{
+		margin-right: 20px;
+		}
+		#facultyDetail section .researchArea div.figures .img.right{
+		margin-left: 20px;
+		}
+	
+
+#facultyDetail section .publications{}
+	#facultyDetail section .publications ol, #facultyDetail section .publications ul{
+	list-style: none;
+	padding-top: 1.5em;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+	}
+		#facultyDetail section .publications ol li, #facultyDetail section .publications ul li{
+		overflow: hidden;
+		zoom: 1;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		color:#333;
+		background: url(../images/icon/partition_01.png) left bottom repeat-x;
+		}
+		#facultyDetail section .publications ol li div, #facultyDetail section .publications ul li div{
+		float: left;
+		width: 28px;
+		height:23px;
+		padding: 7px 0 0 0px;
+		text-align: center;
+		font-size: 100%;
+		background: url(../images/btn/blt_bg_00.png) left top no-repeat;
+		}
+		#facultyDetail section .publications ol li p, #facultyDetail section .publications ul li p{
+			float: right;
+			width: 676px;
+			line-height:1.3;
+			font-size: 107%;
+		}
+		
+    #facultyDetail section .publications ol li p a, #facultyDetail section .publications ul li p a {
+	
+		background: url(../images/icon/blt_pdf.png) left center no-repeat;
+		
+		width: 16px;
+		
+		height: 19px;
+			
+		text-indent: -999999px;
+			
+		display: inline-block;
+	
+	}
+		
+
+	#facultyDetail section .pressReleases{}
+
+	#facultyDetail section .pressReleases ul{
+	list-style: none;
+	/*padding-top: 10px;*/
+	padding-top: 1px;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+	}
+		#facultyDetail section .pressReleases ul li{
+		color:#333;
+		padding-bottom: 1px;
+		background: url(../images/icon/partition_01.png) left bottom repeat-x;
+		}
+			#facultyDetail section .pressReleases ul li.nolink{
+			padding:1.4em 0 1.4em 2px;
+			}
+			
+			#facultyDetail section .pressReleases ul li a,
+			#facultyDetail section .pressReleases ul li span{
+			text-decoration: none;
+			display: block;
+			}
+			
+			#facultyDetail section .pressReleases ul li a{
+			overflow: hidden;
+			padding:1.4em 0 1.4em 20px;
+			background: url(../images/icon/arw_news_index.png) 1px 3em no-repeat;
+			}
+				#facultyDetail section .pressReleases ul li a:hover{
+				background: #F5F5F5 url(../images/icon/arw_news_index.png) 1px 3em no-repeat;
+				}
+			
+			#facultyDetail section .pressReleases ul li span.left{
+			width:565px;
+			float: left;
+			}
+			
+				#facultyDetail section .pressReleases ul li span.date{
+				display: inline;
+				font-size: 85%;
+				font-style: italic;
+				color:#666;
+				}
+				#facultyDetail section .pressReleases ul li span.title{
+				margin:0.5em 0;
+				width:480px;
+				font-size: 100%;
+				line-height: 1.3;
+				}
+				#facultyDetail section .pressReleases ul li span.lab{
+				font-size: 92%;
+				color:#666;
+				padding-left: 11px;
+				line-height: 1.3;
+				background: url(../images/icon/blt_txtline.png) 0 0.5em no-repeat;
+				}
+			#facultyDetail section .pressReleases ul li span.img{
+			width: 102px;
+			float: right;
+			}
+			
+
+/* Document upload */
+			
+#facultyDetail section .documents{}
+
+	#facultyDetail section .documents ul{
+	list-style: none;
+	/*padding-top: 10px;*/
+	padding-top: 1px;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+	}
+		#facultyDetail section .documents ul li{
+		color:#333;
+		padding-bottom: 1px;
+		background: url(../images/icon/partition_01.png) left bottom repeat-x;
+		}
+			#facultyDetail section .documents ul li.nolink{
+				padding:1px 0 1px 2px;
+			}
+			
+			#facultyDetail section .documents ul li a,
+			#facultyDetail section .documents ul li span{
+			text-decoration: none;
+			display: block;
+			}
+			
+			#facultyDetail section .documents ul li a{
+			overflow: hidden;
+			padding:1.4em 0 1.4em 20px;
+			background: url(../images/icon/arw_news_index.png) 1px no-repeat;
+			}
+				#facultyDetail section .documents ul li a:hover{
+				background: #F5F5F5 url(../images/icon/arw_news_index.png) 1px no-repeat;
+				}
+			
+			.headingTitle{
+				font-size: 20px;
+				color: #333;
+				font-weight: 600;
+				font-family: sans-serif;
+			}
+
+/* Faculty Video area */
+.videoArea, .imageArea,.booksArea,.conferenceArea{
+	list-style: none;	
+	padding-top: 10px;
+	background: url(../images/icon/partition_01.png) left top repeat-x;
+}
+
+
+.iframe_video{
+	border:1px solid #333;
+	margin-bottom: 10px;
+}
+.iframe_odd{
+	margin-right: 16px;
+}
+
+/* Faculty Video area */
+.imageArea img{
+	width:350px;
+	height:300px;
+	margin-bottom: 10px;	
+}
+.imageArea img:nth-child(odd){
+	margin-right:16px;
+	
+}
+.imageArea .alignnone{
+	width:350px !important;
+	height:300px;
+	margin-bottom: 10px;	
+	float:left;
+}
+.imageArea .alignnone:nth-child(odd){
+	margin-right:16px;
+}
+/* Contents - Faculty Publications
+----------------------------------------------------*/
+
+#facultyPublications{}
+	#facultyPublications div#mainContents header{
+	padding: 30px 0;
+	border-top:2px solid #333;
+	}
+		#facultyPublications div#mainContents header .left{
+		width:250px;
+		}
+			#facultyPublications div#mainContents header .left span{
+			display: block;
+			width:250px;
+			height:184px;
+			overflow: hidden;
+			position: relative;
+			}
+			#facultyPublications div#mainContents header .left img{
+			-ms-interpolation-mode: bicubic;
+			position: absolute;
+			left:-2px;
+			top:-2px;
+			}
+		
+		#facultyPublications div#mainContents header .right{
+		width:450px;
+		padding-top:20px;
+		}
+		#facultyPublications div#mainContents header h2{
+		margin-bottom: 10px;
+		}
+			#facultyPublications div#mainContents header h2 span.name{
+			font-size:136%;
+			}
+			#facultyPublications div#mainContents header h2 ruby rt{
+			font-size:77%;
+			}
+			#facultyPublications div#mainContents header h2 span.title{
+			font-size:122%;
+			font-weight: lighter;
+			}
+			#facultyPublications div#mainContents header h3{
+			font-size:107%;
+			margin-bottom: 1em;
+			}
+		#facultyPublications div#mainContents header .txt{
+		margin-bottom: 20px;
+		}
+			#facultyPublications div#mainContents header .txt p{
+			font-size:92%;
+			line-height: 1.4;
+			}
+			#facultyPublications div#mainContents header .txt p.outside{
+			color:#666;
+			}
+
+#facultyPublications  div#mainContents ol{
+	list-style: none;
+	padding-top: 1.5em;
+	border-top:1px solid #CCC;
+	}
+		#facultyPublications  div#mainContents ol li{
+		overflow: hidden;
+		zoom: 1;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		color:#333;
+		border-bottom:1px solid #CCC;
+		}
+		#facultyPublications  div#mainContents ol li div{
+		float: left;
+		width: 28px;
+		height:23px;
+		padding: 7px 0 0 0px;
+		text-align: center;
+		font-size: 100%;
+		background: url(../images/faculty/blt_bg_00.png) left top no-repeat;
+		}
+		#facultyPublications  div#mainContents ol li p{
+		float: right;
+		width: 676px;
+		line-height:1.3;
+		font-size: 107%;
+		}
+		
+	#facultyPublications  div#mainContents #pagination{
+	padding: 10px 0 30px;
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	}
+
+
+
+/* Clearfix
+----------------------------------------------------*/
+
+div.figures:before,
+div.figures:after {
+content:"";
+display:block;
+overflow:hidden;
+} 
+div.figures:after {
+clear:both;
+}
+div.figures {
+zoom:1;
+}
+
+
+
+/* Print
+----------------------------------------------------*/
+
+@media print{
+
+	#facultyDetail section .publications ol li:before,
+	#facultyDetail section .publications ol li:after{
+	content:"";
+	display:block;
+	overflow:hidden;
+	}
+	#facultyDetail section .publications ol li:after{
+	clear:both;
+	}
+	#facultyDetail section .publications ol li{
+	zoom:1;
+	}
+
+}
+.overlayBoxWrapper{
+	opacity: 0; visibility:hidden;
+}
+#fixingLayout li:hover > .overlayBoxWrapper{
+	/*display:block;
+	transition: all 200ms ease-in-out 0s;*/
+	visibility: visible;
+	opacity: 1;	
+	-moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;    
+}
+
+#explorerContainerInner .img img{
+	width:235px;
+	height:157px;
+	max-height:157px;
+	
+}
+.batchClass{
+  display: block;
+  font-size: 20px;
+  color: #333;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+#mainVisual{
+text-align: right;
+}
+
+#mainVisual img{  
+  width: 739px;
+}
+.bannerPageTitle{
+  font-size: 23px;
+  display: block;
+  width: 236px;
+  text-align: left;
+  float: left;
+  background: #EAEAEA;
+  height: 180px;
+  position: relative;
+}
+.bannerPageTitle h3{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+  }

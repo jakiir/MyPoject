@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+
+.men01 td{ padding:10px; font-size:15px; background:#C0DFB3; font-weight:bold;}
+/* Tabs */
+.tabs {
+    margin: 1px 0 0 0;
+}
+
+.tabs .tab-wrapper {
+    /*border: 1px solid #dcdcdc;*/
+    margin: -1px 0 0 0;
+    position:relative;
+}
+*+ html .tabs .tab-wrapper {
+	margin-top:-2px;
+}
+
+.tabs .tab-menu ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tabs .tab-menu li {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs .tab-menu a {
+    background-color: #C0DFB3;
+    border:none;
+    color: #444;
+    display: block;
+    font-size: 12px;
+    margin: 0 2px 0 0;
+    padding:0;
+    line-height:47px;
+    width:179px;
+    text-align:center;
+    text-decoration:none;
+    font-size:1.154em;
+}
+
+.tabs .tab-menu a:hover {
+	background-color:#C0DFB3;
+	text-shadow:1px 1px white;
+}
+
+.tabs .tab-menu a.active {
+    background-color: #DCF3D8;
+    /*border:1px solid #dcdcdc;*/
+    border-bottom: none;
+    color: #2c2c2c;
+    text-decoration:none !important;
+    line-height:45px;
+    height:47px;
+    width:178px;
+    position:relative;
+    z-index:2;	
+}
+
+.tabs .tab {
+    background-color: #fff;
+    padding:17px 0;
+}
+
+
+input[type='text']{width:300px; height:25px; border:1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	padding:0 0 0 10px;
+}
+input[type='text']:focus
+{
+  color:#B00000;
+  border : 1px solid #990000;
+}
+textarea{
+	width:298px;
+	height:80px;
+	border:1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	padding:0 0 0 10px;
+
+}
+select{
+	height:25px;
+	border:1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	padding:0 0 0 10px;
+	
+	}
+
+
+input[type='submit'],input[type="reset"]
+{
+	width:100px; height:30px;
+	padding-left:0px;
+	border:1px solid #CCC;
+	color:#037568;
+	cursor: pointer;
+	font:700 12px Verdana, Geneva, sans-serif;
+    
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px; 
+
+}
+
+input[type='submit']
+{
+  width:100px;
+   height:30px;
+   padding-left:0px;
+   cursor:pointer;   
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px;  }
+
+
+input[type='submit']:hover
+{
+  color:#B00000;
+  border : 1px solid #990000;
+  
+}
+
+input[type='reset']:hover
+{
+  color:#B00000;
+  border : 1px solid #990000;
+}
+
+
+.layer1 {
+margin: 0;
+padding: 0;
+width: auto;
+}
+
+.heading0223 {
+margin: 1px 0;
+padding: 10px 0;
+cursor: pointer;
+position: relative;
+font-size:12px;
+font-weight:bold;
+background:#DCF3D8;
+color:#060;
+font-stretch:narrower;
+}
+.content5454 {
+padding: 5px 10px;
+background-color:#fafafa;
+}
+p { padding: 5px 0; }
+
+.mainBody{ width:1000px; min-height:500px; font-size:14px; font-family: sans-serif;}
+	.leftSidebar{ width:230px; min-height:480px; padding:10px; float:left; }
+	.MainSidebar{ width:730px; min-height:500px;  padding:10px; float:left; }
+	.sideHead{ background:#C0DFB3; padding:15px; font-weight:700; color:#060; font-stretch:narrower;}
+	.sideHead2{ padding:10px; font-weight:700; color:#060; font-stretch:narrower; text-align:left;}
+	a{ text-decoration:none;}
+	.link54{ padding:10px; line-height:25px; text-align:justify;}
+	p{ text-align:justify; line-height:28px; font-family:sans-serif; font-size:14px;}
+
+	.tab-menu{
+		overflow:hidden;
+	}
+	
+div#sideNav { 
+  margin-top: 12px;
+  text-align: center;
+}
+#laboratoryDetails{
+	margin-bottom:20px;
+}
+
+.faculty_members,
+.researcher_url,
+.guest_researchers,
+.under_graduate_students,
+.masters_students,
+.mphil_students
+{
+  text-align: left;
+  list-style:none;
+}
+
+.link54 .faculty_members,
+.link54 .researcher_url,
+.link54 .guest_researchers,
+.link54 .under_graduate_students,
+.link54 .masters_students,
+.link54 .mphil_students
+{
+  margin-left:15px;
+}
+
+.faculty_members li a,
+.researcher_url li a,
+.guest_researchers li a,
+.under_graduate_students li a,
+.masters_students li a,
+.mphil_students li a
+{
+  padding: 6px 0;
+  display: block;
+}
+.laboratory_event img{
+  width: 350px;
+  height: 200px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,48 @@
+div.jContent
+{
+	float: left;
+		
+}
+
+div.jContent p
+{
+	padding: 0px 0px 0px 0px;	
+	margin: 0px 0px 0px 0px;
+}
+
+div.jContent a
+{
+	float: left;
+	display: block;	
+}
+
+div.jContent a.hide
+{
+	visibility: hidden;
+}
+
+/* horizontal */
+div.jc-horizontal
+{
+}
+
+
+/* vertical */
+div.jc-vertical
+{
+}
+
+
+
+/* auto and circle */
+div.jc-auto
+{
+
+}
+
+
+div.js-circle
+{
+	
+}
+

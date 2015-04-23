@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* Font
+----------------------------------------------------*/
+
+.txt p{
+
+}
+
+
+
+
+/* Module
+----------------------------------------------------*/
+
+.input00,
+.input01,
+.select00,
+.textarea00{
+padding: 9px;
+border: 1px solid #D5D5D5;
+}
+
+.select00{
+width:230px;
+}
+
+.input00{
+width:150px;
+}
+
+.input01{
+width:380px;
+}
+
+.textarea00{
+width:600px;
+height: 300px;
+}
+
+.input_subject input{
+	height: 2em;
+}
+
+
+
+/* Structure
+----------------------------------------------------*/
+
+#contact footer{
+margin-top: 30px;
+}
+
+
+
+
+
+/* Contents - Index
+----------------------------------------------------*/
+
+p.require{
+margin: 30px 0 10px;
+padding: 0 0 0 13px;
+font-size: 107%;
+line-height: 1;
+background: url(../images/icon/icon_require.png) left center no-repeat;
+}
+
+table.contactForm tr th,
+table.contactForm tr td{
+padding:20px 0;
+vertical-align: middle;
+background: url(../images/icon/partition_00.png) left bottom repeat-x;
+}
+
+	table.contactForm tr.last th,
+	table.contactForm tr.last td{
+	background-image: none;
+	}
+
+table.contactForm tr th{
+width:216px;
+text-align: right;
+background-color:#D8D8D8;
+}
+
+	table.contactForm tr th span{
+	margin-right: 10px;
+	padding: 0 10px 0 0;
+	font-size:107%;
+	line-height: 1;
+	}
+	
+	table.contactForm tr th span.require{
+	background: url(../images/icon/icon_require.png) right top no-repeat
+	}
+
+table.contactForm tr td{
+width:759px;
+padding-left: 20px;
+background-color:#F1F1F1;
+}
+
+table.contactForm tr td p{
+font-size:107%;
+line-height: 1.4;
+width:600px;
+}
+
+
+div.alert{
+margin-top: 30px;
+padding: 20px;
+text-align: center;
+border:1px solid #CCC;
+}
+	div.alert.finish{
+	padding:20px;
+	}
+	div.alert p{
+	font-size: 107%;
+	color:#000;
+	}
+	div.alert p.error{
+	color: #E30101;	
+	font-weight: bold;
+	}
+
+
+table.contactForm tr td p.error{
+color: #E30101;
+font-size: 107%;
+margin-top: 5px;
+line-height: 1;
+}
+
+.bannerPageTitle{
+  font-size: 23px;
+  display: block;
+  width: 236px;
+  text-align: left;
+  float: left;
+  background: #EAEAEA;
+  height: 180px;
+  position: relative;
+}
+.bannerPageTitle h3{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

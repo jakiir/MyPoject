@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* Font
+----------------------------------------------------*/
+
+#aboutRikenBSI .txt p{
+line-height: 1.5;
+font-weight: 200;
+}
+
+
+
+
+/* Module
+----------------------------------------------------*/
+
+
+
+/* Structure
+----------------------------------------------------*/
+
+div#mainContents{
+width:100%;
+}
+
+#aboutRikenBSI section .left{
+
+}
+
+
+
+
+/* Contents - Index
+----------------------------------------------------*/
+
+#aboutRikenBSI section{
+margin-bottom: 70px;
+}
+
+	#aboutRikenBSI section h2{
+	font-size:0px;
+	margin-bottom: 30px;
+	}
+	
+	#aboutRikenBSI section .txt{
+	width:530px;
+	}
+	
+
+#aboutRikenBSI section#aboutRikenBSI00 .left,
+#aboutRikenBSI section#aboutRikenBSI04 .left,
+#aboutRikenBSI section#aboutRikenBSI01 .right,
+#aboutRikenBSI section#aboutRikenBSI03 .right,
+#aboutRikenBSI section#aboutRikenBSI05 .right{
+width:562px;
+}
+
+#aboutRikenBSI section#aboutRikenBSI02 .right{
+width: 602px;
+}
+
+#aboutRikenBSI section#aboutRikenBSI00 .right,
+#aboutRikenBSI section#aboutRikenBSI04 .right,
+#aboutRikenBSI section#aboutRikenBSI01 .left,
+#aboutRikenBSI section#aboutRikenBSI02 .left,
+#aboutRikenBSI section#aboutRikenBSI03 .left,
+#aboutRikenBSI section#aboutRikenBSI05 .left{
+width:373px;
+}
+
+
+#aboutRikenBSI section#aboutRikenBSI00{
+padding-top:40px;
+border-top:1px solid #CCC;
+}
+
+	#aboutRikenBSI section#aboutRikenBSI00 .btn{
+	margin-top: 40px;
+	}
+
+
+#aboutRikenBSI section#aboutRikenBSI02 .left{}
+	#aboutRikenBSI section#aboutRikenBSI02 .left .txt{
+	width:333px;
+	}
+
+#aboutRikenBSI section#aboutRikenBSI05{}
+	#aboutRikenBSI section#aboutRikenBSI05 .left p.img{
+	text-align: right;
+	}
+	#aboutRikenBSI section#aboutRikenBSI05 .right .txt{
+	width:500px;
+	}
+
+
+
+#aboutRikenBSI section#aboutRikenBSI_Director{
+padding-top:40px;
+border-top:1px solid #CCC;
+}
+	#aboutRikenBSI section#aboutRikenBSI_Director .left,
+	#aboutRikenBSI section#aboutRikenBSI_Director .right{
+	width: 468px;
+	}
+		#aboutRikenBSI section#aboutRikenBSI_Director h2{
+		margin-bottom: 35px;
+		}
+		#aboutRikenBSI section#aboutRikenBSI_Director h3{
+		font-size: 0px;
+		margin-bottom: 20px;
+		}
+		#aboutRikenBSI section#aboutRikenBSI_Director .img{
+		margin-bottom: 20px;
+		}
+		#aboutRikenBSI section#aboutRikenBSI_Director .txt{
+		width: 468px;
+		}
+		
+		#aboutRikenBSI section#aboutRikenBSI_Director .sign{
+		margin-top: 70px;
+		text-align: right;
+		}
+
+#aboutRikenBSI .otherLinks{
+padding: 20px 0 20px 5px;
+border-top: 1px solid #CCC;
+border-bottom: 1px solid #CCC;
+}
+
+#aboutRikenBSI .otherLinks a{
+font-size:107%;
+}
+
+#aboutBrochure table{
+	width: 100%;
+}
+#aboutBrochure td{
+	width: 50%;
+	text-align:center;
+}
+#aboutBrochure a:hover img{
+opacity: 0.7;
+-moz-opacity: 0.7;
+filter:alpha(opacity=70);
+}
+.bannerPageTitle{
+  font-size: 23px;
+  display: block;
+  width: 236px;
+  text-align: left;
+  float: left;
+  background: #EAEAEA;
+  height: 180px;
+  position: relative;
+}
+.bannerPageTitle h3{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+  }

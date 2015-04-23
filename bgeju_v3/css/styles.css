@@ -1,0 +1,415 @@
+﻿@charset "utf-8";
+
+/* Font
+----------------------------------------------------*/
+
+.txt p{
+color:#666;
+line-height: 1.4 !important;
+font-size:100% !important;
+}
+
+.noDesignUrl{
+	text-decoration:none;
+}
+
+/* Module
+----------------------------------------------------*/
+
+.titleStyle_B2{
+margin-bottom: 20px !important;
+}
+
+/* Roll Over */
+
+
+#featuredArticles .left img,
+#about .img img,
+#faculty .img img,
+#nijc_bana .img img{
+-webkit-transition: opacity 0.1s ease-out;
+}
+
+h2 a:hover img{
+opacity: 0.7;
+-moz-opacity: 0.7;
+filter:alpha(opacity=70);
+}
+
+#featuredArticles .left a:hover img,
+#about .img a:hover img,
+#faculty .img a:hover img,
+#nijc_bana .img,
+#summerSponsor .img img:hover{
+opacity: 0.8;
+-moz-opacity: 0.8;
+filter:alpha(opacity=80);
+
+}
+
+
+/* Main Visual
+----------------------------------------------------*/
+
+section#mainVisual{
+margin-bottom: 35px;
+font-size: 0px;
+position: relative;
+}
+
+section#mainVisual #imageNavi{
+position: absolute;
+right:20px;
+bottom: 20px;
+z-index: 1;
+}
+
+section#mainVisual #imageNavi ul li{
+float:left;
+margin: 0;
+padding: 0;
+width:36px;
+height:36px;
+font-size:0;
+line-height: 1;
+}
+	/*section#mainVisual #imageNavi ul li a{
+	display: block;
+	line-height: 1;
+	width: 36px;
+	height: 36px;
+	text-indent: -9999px;
+	}*/
+	
+	
+	
+	section#mainVisual #imageNavi ul li.naviNumber a{
+	background: url(../images/icon/slider_navi_bg.png) 0px -36px no-repeat;
+	display: block;
+	line-height: 3.2;
+	width: 36px;
+	height: 36px;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+	/*section#mainVisual #imageNavi ul li#imgNavi01 a{
+	background: url(../images/top/image_navi_01.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNavi02 a{
+	background: url(../images/top/image_navi_02.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNavi03 a{
+	background: url(../images/top/image_navi_03.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNavi04 a{
+	background: url(../images/top/image_navi_04.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNavi05 a{
+	background: url(../images/top/image_navi_05.png) 0px -36px no-repeat;
+	}*/
+	section#mainVisual #imageNavi ul li#imgNaviLeft a{
+	background: url(../images/icon/image_navi_left.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNaviRight a{
+	background: url(../images/icon/image_navi_right.png) 0px -36px no-repeat;
+	}
+	section#mainVisual #imageNavi ul li#imgNaviLeft a, section#mainVisual #imageNavi ul li#imgNaviRight a{
+		display: block;
+		line-height: 1;
+		width: 36px;
+		height: 36px;
+		text-indent: -9999px;
+	}
+
+		section#mainVisual #imageNavi ul li a:hover{
+		background-position: 0px -72px !important;
+		}
+		section#mainVisual #imageNavi ul li.current a{
+		background-position: 0px 0px !important;
+		}
+
+
+
+/* Structure
+----------------------------------------------------*/
+
+.site-logo{
+  width: 489px;
+  height: auto;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 35px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.ju-logo{
+  float: left;
+  display: inline-block;
+}
+
+div#featuredArticles{
+float:left;
+width:466px;
+padding:0 0 0 0;
+}
+
+section#about,
+section#eventVideo,
+section#faculty,
+section#nijc_bana,
+section#summerSponsor{
+float:right;
+width:466px;
+}
+
+section#eventVideo{
+    margin-top: 139px;
+}
+
+section#about,
+section#faculty{
+margin-bottom: 40px;
+}
+
+section#nijc_bana{
+margin: 0 0 30px 0;
+}
+
+#contentFooter{
+margin-top: 50px;
+}
+#contentFooter.only_jp{
+margin-top: 35px;
+}
+
+
+
+
+/* Contents
+----------------------------------------------------*/
+
+
+
+
+/* Contents - Featured Articles
+----------------------------------------------------*/
+
+div#featuredArticles{}
+	div#featuredArticles article{
+	overflow: hidden;
+	zoom:1;
+	margin-bottom:20px;
+	padding-bottom: 20px;
+	background: url(../images/icon/partition_01.png) left bottom repeat-x;
+	}
+	article.marqueeEvery{		
+		display:inline-block;
+		max-height: 131px;
+	}
+	
+	
+	
+	
+		div#featuredArticles article.last{
+		background: none;
+		}
+	div#featuredArticles article .left{
+	width:268px;
+	}
+div#featuredArticles article .left img{
+ max-height:107px;
+}
+	div#featuredArticles article .right{
+	width:178px;
+	}
+	div#featuredArticles article hgroup{
+	margin-bottom:1em;
+	}
+	div#featuredArticles article h3,
+    div#featuredArticles article h3 a, #eventVideo h3 a{
+	font-size:107%;
+	font-weight: bold;
+	margin-bottom:0.3em;
+	text-decoration: none;
+	}
+	div#featuredArticles article h3 a:hover{
+	text-decoration: underline;
+	}
+	div#featuredArticles article h4{
+	font-size:85%;
+	color:#666;
+	font-style: italic;
+	}
+	div#featuredArticles article a.linkMore{
+	font-size:92%;
+	font-style: italic;
+	}
+
+
+
+/* Contents - About, Faculty
+----------------------------------------------------*/
+
+section#about .linkArwNormal,
+section#faculty .linkArwNormal{
+display: inline;
+display: inline-block;
+zoom: 1;
+margin-top:15px;
+font-size:100%;
+}
+	section#faculty .linkArwNormal{
+	margin-top:13px;
+	}
+
+section#about div.img,
+section#faculty div.img{
+margin: 0 0 15px;
+}
+
+section#faculty div.img span.a{
+display: block;
+width:466px;
+overflow: hidden;
+font-size:0px;
+}
+
+section#faculty div.img span.b{
+display: block;
+width:470px;
+font-size:0px;
+}
+
+section#faculty div.img span img{
+margin: 0 2px 2px 0;
+}
+
+
+
+/* Contents - About, nijc_bana
+----------------------------------------------------*/
+#nijc_bana img{
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+/* Contents - News
+----------------------------------------------------*/
+div.newevent{
+	width: 30px;
+	height: 18px;
+	
+	background-image: url(../images/blt_newevent.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	*display: inline;
+    *zoom: 1;
+	position: relative;
+	top: 4px;
+	margin-left: 2px;
+	}
+	
+/* Contents - Carousel
+----------------------------------------------------*/
+#carouselContainer{
+	width: 975px;
+	height: 120px;
+	position: relative;
+	top: -35px;
+}
+#carouselContainer img:hover{
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+td.cbn1{
+	width: 258px;
+	height: 120px;
+	vertical-align: middle;
+}
+td.cbn2{
+	width: 258px;
+	height: 120px;
+	vertical-align: middle;
+}
+td.cbn3{
+	width: 258px;
+	height: 120px;
+	vertical-align: middle;
+}
+td.cbn4{
+	width: 200px;
+	height: 120px;
+	vertical-align: middle;
+}
+
+.headingTitle {
+font-size: 20px;
+color: #333;
+font-family: sans-serif;
+margin-bottom: 15px;
+font-weight:normal;
+}
+
+.headingTitle a{
+   text-decoration:none;
+   font-weight:normal;
+}
+
+.event-images{
+  height:270px;
+  background: transparent !important;
+}
+
+.laboratory, .course-curriculum{
+  background: transparent !important;
+}
+.galleyImages{
+  position: relative;
+}
+
+.galleyImages img:nth-child(2){
+  position: absolute;
+  z-index: 9;
+  top: 20px;
+  left: 26%;
+}
+.galleyImages img:nth-child(3){
+  position: absolute;
+  z-index: 99;
+  top: 75px;
+  left: 13%;
+}
+
+.noUnderline{
+  text-decoration:none;
+}
+#mainVisual{
+text-align: right;
+}
+
+#mainVisual img{  
+  width: 739px;
+}
+
+.bannerPageTitle{
+  font-size: 23px;
+  display: block;
+  width: 236px;
+  text-align: left;
+  float: left;
+  background: #EAEAEA;
+  height: 180px;
+  position: relative;
+}
+.bannerPageTitle h3{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+  }
+/* Contents - Summer, Sponsor
+----------------------------------------------------*/
